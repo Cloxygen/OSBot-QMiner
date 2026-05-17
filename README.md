@@ -35,7 +35,6 @@ The script is built around a prioritized list of tasks (State/Task pattern) loca
 * [GUI.java](src/GUI.java) - Managed the custom screen overlay, custom mouse listener for selecting rocks, and HUD toggles.
 * [Sleep.java](src/Sleep.java) - Wrapper for OSBot's `ConditionalSleep` to allow waiting for specific conditions.
 * [Utility.java](src/Utility.java) - Simple helpers (e.g. converting milliseconds to a readable time format).
-* [Fatigue.java](src/Fatigue.java) - Placeholder for future fatigue/exhaustion logic.
 
 ### Tasks (`src/Tasks`)
 * [Task.java](src/Tasks/Task.java) - Base abstract class for tasks.
