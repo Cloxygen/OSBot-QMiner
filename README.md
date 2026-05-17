@@ -1,4 +1,4 @@
-# QMiner
+[# QMiner
 
 > [!WARNING]  
 > **Legacy Archive Notice**: OSBot has transitioned to a non-Java client, meaning Java-based scripts are no longer supported. This project is deprecated and non-functional. It is preserved here solely as an archived reference for custom state-machine (State/Task) botting architecture in Java.
@@ -93,3 +93,4 @@ flowchart TD
    * **Banking**: Toggle to `On` to walk to the bank, or `Off` to power-mine.
    * **World Hop**: Toggle `On` to hop worlds when all selected rocks are depleted.
 5. Click the green **Start** button.
+](https://osbot.org/forum/topic/121108-qminer/)
