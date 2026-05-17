@@ -8,8 +8,8 @@ An All-in-One (AIO) mining script for OSBot that worked in any location. Origina
 ---
 
 ## 📸 Screenshots
-![Screenshot 1](https://ibb.co/SXYg17xZ)
-![Screenshot 2](https://ibb.co/1Df1L5Q)
+![Screenshot 1](https://i.ibb.co/5Wp3zx9J/Screenshot-2025-08-08-232417.png)
+![Screenshot 2](https://i.ibb.co/ptvcx8w/Screenshot-2026-02-21-182105.png)
 
 ---
 
