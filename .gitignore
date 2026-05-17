@@ -1,0 +1,22 @@
+# Compiled Java output
+/out/
+*.class
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+
+# Log and temporary files
+*.log
+*.tmp
+*.temp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Compiled script builds (so you don't commit local JARs)
+*.jar
+*.zip
