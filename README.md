@@ -1,7 +1,7 @@
 # QMiner
 
 > [!WARNING]  
-> **Legacy Archive Notice**: OSBot has transitioned to a non-Java client, meaning Java-based scripts are no longer supported. This project is deprecated and non-functional. It is preserved here solely as an archived reference for custom state-machine (State/Task) botting architecture in Java.
+> **Legacy Archive Notice**: OSBot has transitioned to a non-Java client, meaning Java-based scripts are no longer supported. This project is deprecated and non-functional. It is preserved here solely as an archived reference.
 
 An All-in-One (AIO) mining script for OSBot that worked in any location. Originally released on the [OSBot Forums](https://osbot.org/forum/topic/121108-qminer/), it featured interactive on-screen ore selection, mouse pre-hovering, and options for banking, dropping, and world-hopping.
 
