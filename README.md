@@ -18,8 +18,6 @@ QMiner was a long-running Java automation tool used by **17,000+ users** over **
 
 It demonstrates practical Java engineering under the constraints of an external client API: task-based runtime behavior, interactive HUD controls, runtime decision-making, banking/dropping/world-hopping logic, and long-term support of real users.
 
-The code is intentionally direct and purpose-fit. It solves the problems the project actually had without adding unnecessary abstraction for problems it did not have.
-
 ---
 
 ## Screenshots
