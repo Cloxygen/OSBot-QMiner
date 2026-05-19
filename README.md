@@ -16,7 +16,7 @@ Originally released on the [OSBot Forums](https://osbot.org/forum/topic/121108-q
 
 QMiner was a long-running Java automation tool used by **17,000+ users** over **9 years**.
 
-It demonstrates practical Java engineering under the constraints of an external client API: task-based runtime behavior, interactive HUD controls, runtime decision-making, banking/dropping/world-hopping logic, and long-term support of real users.
+It demonstrates practical Java engineering under the constraints of an external client API: task-based runtime behavior, interactive HUD controls, runtime decision-making based on changing game-state, and long-term support of real users.
 
 ---
 
@@ -43,8 +43,6 @@ It demonstrates practical Java engineering under the constraints of an external 
 ## Codebase Structure
 
 The script is built around a prioritized list of tasks using a State/Task pattern located in `src/Tasks`.
-
-Every loop iteration, approximately every 100ms, the script ran the first task in the list that was ready. This kept the runtime behavior simple, predictable, and easy to reason about.
 
 ### Core System
 
@@ -86,40 +84,6 @@ flowchart TD
     TaskMine -- Ready --> ExecMine[Mine & Pre-Hover] --> StateMine[State: 'Mining'] --> LoopEnd
     TaskMine -- false --> LoopEnd
 ```
-
----
-
-## Engineering Notes
-
-QMiner was built to match the constraints of the OSBot Java client environment.
-
-The design favors direct, readable systems:
-
-* A prioritized task loop instead of an overbuilt framework
-* Runtime state checks close to the behavior that needs them
-* HUD controls tied directly to script configuration
-* Practical handling of edge cases found through real use
-* Simple abstractions where they helped separate behavior
-
-This project is preserved as legacy code, but the structure reflects the needs of a real tool that was used, supported, and maintained over time.
-
----
-
-## Historical Setup
-
-These instructions are preserved for context only. QMiner targeted OSBot's legacy Java client and is no longer functional under OSBot's current non-Java architecture.
-
-1. Install JDK 8.
-2. Add `osbot-client.jar` as a project dependency.
-3. Build the project as a `.jar`.
-4. Copy the compiled JAR into the OSBot scripts folder:
-
-```txt
-%USERPROFILE%/OSBot/Scripts/
-```
-
-5. Launch OSBot, start QMiner, select rocks in the overlay, choose banking/world-hop settings, and press Start.
-
 ---
 
 ## Repository Notes
