@@ -16,7 +16,7 @@ Originally released on the [OSBot Forums](https://osbot.org/forum/topic/121108-q
 
 QMiner was a long-running Java automation tool used by **17,000+ users** over **9 years**.
 
-It demonstrates practical Java engineering under the constraints of an external client API: task-based runtime behavior, interactive HUD controls, runtime decision-making based on changing game-state, and long-term support of real users.
+It demonstrates practical Java engineering under the constraints of an external client API: task-based runtime behavior, interactive HUD controls, decisions based on changing game state, and long-term support for real users.
 
 ---
 
@@ -32,7 +32,7 @@ It demonstrates practical Java engineering under the constraints of an external 
 
 * **Interactive HUD:** Showed runtime, XP gained, XP/hr, level progress bar, and simple toggle buttons for banking and world-hopping.
 * **On-Screen Selection:** Clicked rocks directly in the game window to select or deselect them before starting.
-* **Pre-Hovering:** Moved the mouse to the next rock while still mining the current one, keeping XP rates competitive and simulating human behavior.
+* **Pre-Hovering:** Moved the mouse to the next rock while still mining the current one, improving XP rates and simulating human behavior.
 * **Smart Banking:** Found the closest F2P or Members bank, walked there using web-walking, and deposited everything except pickaxes.
 * **Power Mining:** Dropped ores instantly when the inventory was full, keeping waterskins, coins, and pickaxes safe.
 * **World Hopping:** Automatically hopped worlds if all selected rocks were depleted, with members and F2P world separation.
@@ -42,7 +42,7 @@ It demonstrates practical Java engineering under the constraints of an external 
 
 ## Codebase Structure
 
-The script is built around a prioritized list of tasks using a State/Task pattern located in `src/Tasks`.
+Each loop checks the highest-priority behavior first, keeping the runtime logic predictable and easy to reason about.
 
 ### Core System
 
@@ -50,7 +50,7 @@ The script is built around a prioritized list of tasks using a State/Task patter
 * [Settings.java](src/Settings.java) - Held configurations like toggles, starting position, selected rocks, and active stats.
 * [GUI.java](src/GUI.java) - Managed the custom screen overlay, custom mouse listener for selecting rocks, and HUD toggles.
 * [Sleep.java](src/Sleep.java) - Wrapper for OSBot's `ConditionalSleep` to allow waiting for specific conditions.
-* [Utility.java](src/Utility.java) - Simple helpers, such as converting milliseconds to a readable time format.
+* [Utility.java](src/Utility.java) - Utility helpers, such as converting milliseconds to a readable time format.
 
 ### Tasks (`src/Tasks`)
 
