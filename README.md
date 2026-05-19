@@ -28,7 +28,7 @@ It demonstrates practical Java engineering under the constraints of an external 
 
 ---
 
-## Features (Historical)
+## Features
 
 * **Interactive HUD:** Showed runtime, XP gained, XP/hr, level progress bar, and simple toggle buttons for banking and world-hopping.
 * **On-Screen Selection:** Clicked rocks directly in the game window to select or deselect them before starting.
